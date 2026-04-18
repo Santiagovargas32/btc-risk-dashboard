@@ -1,0 +1,15 @@
+node_modules/
+npm-debug.log*
+*.log
+
+.env
+.env.local
+
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+coverage/
+.DS_Store
+Thumbs.db

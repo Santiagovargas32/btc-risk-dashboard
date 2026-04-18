@@ -1,0 +1,28 @@
+{
+  "name": "btc-risk-dashboard",
+  "version": "1.0.0",
+  "description": "BTC trading decision dashboard based on historical behavior and current market conditions.",
+  "main": "src/server/app.js",
+  "scripts": {
+    "start": "node src/server/app.js",
+    "dev": "nodemon src/server/app.js",
+    "import:dataset": "node scripts/import-dataset.js",
+    "build:snapshots": "node scripts/build-snapshots.js",
+    "test": "node tests/run-tests.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "1.15.0",
+    "bootstrap": "5.3.8",
+    "chart.js": "4.5.1",
+    "csv-parse": "6.2.1",
+    "dotenv": "17.4.2",
+    "express": "5.2.1",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.14"
+  }
+}

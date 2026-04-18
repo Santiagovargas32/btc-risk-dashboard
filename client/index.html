@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTC Risk Dashboard</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/dashboard.css">
+  </head>
+  <body>
+    <main class="container-xxl py-4">
+      <header class="dashboard-header mb-4">
+        <div>
+          <p class="eyebrow mb-1">BTCUSDT</p>
+          <h1 class="h2 mb-1">Trade Readiness</h1>
+          <p class="text-secondary mb-0">Current conditions measured against historical trading behavior.</p>
+        </div>
+        <div class="header-actions">
+          <label class="form-label mb-1" for="intervalSelect">Interval</label>
+          <select id="intervalSelect" class="form-select" aria-label="Market interval">
+            <option value="1m">1m</option>
+            <option value="5m">5m</option>
+            <option value="15m">15m</option>
+            <option value="30m">30m</option>
+            <option value="1h" selected>1h</option>
+            <option value="4h">4h</option>
+            <option value="1d">1d</option>
+          </select>
+          <button id="refreshButton" class="btn btn-accent" type="button">Refresh</button>
+        </div>
+      </header>
+
+      <section id="errorAlert" class="alert alert-danger d-none" role="alert"></section>
+
+      <section class="row g-3 mb-3">
+        <div class="col-lg-4">
+          <article class="panel score-panel h-100">
+            <div class="d-flex align-items-start justify-content-between gap-3">
+              <div>
+                <p class="panel-label mb-1">Score</p>
+                <div id="scoreValue" class="score-value">--</div>
+              </div>
+              <span id="decisionBadge" class="badge text-bg-secondary decision-badge">--</span>
+            </div>
+            <p id="scoreSummary" class="score-summary mt-3 mb-0">Waiting for market data.</p>
+          </article>
+        </div>
+
+        <div class="col-lg-8">
+          <article class="panel h-100">
+            <div class="d-flex align-items-center justify-content-between gap-3 mb-3">
+              <div>
+                <p class="panel-label mb-1">Deterministic Components</p>
+                <h2 class="h5 mb-0">Metric Bars</h2>
+              </div>
+              <span id="generatedAt" class="text-secondary small">--</span>
+            </div>
+            <div id="metricBars" class="metric-bars"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="row g-3">
+        <div class="col-xl-8">
+          <article class="panel h-100">
+            <div class="d-flex align-items-center justify-content-between gap-3 mb-3">
+              <div>
+                <p class="panel-label mb-1">Historical Equity</p>
+                <h2 class="h5 mb-0">Equity Curve</h2>
+              </div>
+              <span id="tradeCount" class="text-secondary small">0 trades</span>
+            </div>
+            <div class="chart-frame">
+              <canvas id="equityChart" aria-label="Historical equity curve"></canvas>
+              <p id="chartEmptyState" class="chart-empty mb-0">Import a dataset to display historical equity.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-xl-4">
+          <article class="panel h-100">
+            <p class="panel-label mb-1">Market Conditions</p>
+            <h2 class="h5 mb-3">Live BTC Snapshot</h2>
+            <p id="marketCacheInfo" class="cache-note mb-3">Binance cache: --</p>
+            <dl id="marketStats" class="stats-list mb-4"></dl>
+
+            <p class="panel-label mb-1">Historical Profile</p>
+            <dl id="historicalStats" class="stats-list mb-0"></dl>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="/vendor/chart.js/chart.umd.js"></script>
+    <script type="module" src="/assets/js/dashboard.js"></script>
+  </body>
+</html>
