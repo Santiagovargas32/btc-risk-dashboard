@@ -1,0 +1,57 @@
+{
+  "strategies": [
+    {
+      "id": "trend_following_breakout",
+      "name": "Trend Following Breakout",
+      "assetTypes": [
+        "crypto",
+        "stock",
+        "etf"
+      ],
+      "marketRegimes": [
+        "trend",
+        "low_vol_breakout",
+        "breakout"
+      ],
+      "signals": [
+        "ema_alignment_bullish",
+        "volume_expansion",
+        "resistance_break"
+      ],
+      "riskProfile": "medium",
+      "bias": "bullish",
+      "notes": "Works better in directional expansion regimes.",
+      "source": {
+        "fileName": "seed",
+        "section": "default",
+        "extractedAt": "2026-04-19T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "range_mean_reversion",
+      "name": "Range Mean Reversion",
+      "assetTypes": [
+        "crypto",
+        "stock",
+        "etf"
+      ],
+      "marketRegimes": [
+        "range",
+        "compressed_range"
+      ],
+      "signals": [
+        "support_retest",
+        "resistance_rejection",
+        "rsi_extreme"
+      ],
+      "riskProfile": "medium",
+      "bias": "neutral",
+      "notes": "Avoid using this pattern during confirmed volatility expansion.",
+      "source": {
+        "fileName": "seed",
+        "section": "default",
+        "extractedAt": "2026-04-19T00:00:00.000Z"
+      }
+    }
+  ]
+}

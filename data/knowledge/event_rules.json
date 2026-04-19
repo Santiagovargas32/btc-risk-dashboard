@@ -1,0 +1,23 @@
+{
+  "rules": [
+    {
+      "id": "conflict_oil_up_risk_off",
+      "eventType": "geopolitical_conflict",
+      "themes": [
+        "conflict",
+        "energy"
+      ],
+      "impact": {
+        "oil": "bullish",
+        "equities": "bearish",
+        "defense": "bullish",
+        "crypto": "mixed"
+      },
+      "source": {
+        "fileName": "seed",
+        "section": "default",
+        "extractedAt": "2026-04-19T00:00:00.000Z"
+      }
+    }
+  ]
+}

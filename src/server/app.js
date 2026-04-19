@@ -5,6 +5,10 @@ const logger = require('./utils/logger');
 const dashboardRoutes = require('./routes/dashboard.routes');
 const scoringRoutes = require('./routes/scoring.routes');
 const healthRoutes = require('./routes/health.routes');
+const analysisRoutes = require('./routes/analysis.routes');
+const macroRoutes = require('./routes/macro.routes');
+const geopoliticsRoutes = require('./routes/geopolitics.routes');
+const knowledgeRoutes = require('./routes/knowledge.routes');
 
 const app = express();
 
@@ -45,6 +49,10 @@ app.use(express.static(path.join(env.ROOT_DIR, 'client')));
 app.use('/api/health', healthRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/scoring', scoringRoutes);
+app.use('/api/analysis', analysisRoutes);
+app.use('/api/macro', macroRoutes);
+app.use('/api/geopolitics', geopoliticsRoutes);
+app.use('/api/knowledge', knowledgeRoutes);
 
 app.get(/^(?!\/api).*/, (req, res) => {
   res.sendFile(path.join(env.ROOT_DIR, 'client/index.html'));
@@ -85,7 +93,7 @@ app.use((error, req, res, next) => {
 
 if (require.main === module) {
   app.listen(env.PORT, () => {
-    logger.info(`BTC risk dashboard listening on http://localhost:${env.PORT}`);
+    logger.info(`Market intelligence dashboard listening on http://localhost:${env.PORT}`);
   });
 }
 

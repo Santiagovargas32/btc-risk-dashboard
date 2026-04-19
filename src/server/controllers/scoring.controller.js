@@ -4,6 +4,7 @@ async function getScoring(req, res, next) {
   try {
     const payload = await buildDashboardPayload({
       interval: req.query.interval,
+      symbol: req.query.symbol,
     });
     res.json({
       score: payload.score,

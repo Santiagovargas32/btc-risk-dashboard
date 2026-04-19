@@ -4,15 +4,39 @@ const { z } = require('zod');
 
 dotenv.config({ quiet: true });
 
+const optionalUrl = z.preprocess(
+  (value) => (value === '' ? undefined : value),
+  z.string().url().optional(),
+);
+
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
   PORT: z.coerce.number().int().positive().default(3000),
   DATASET_SOURCE_PATH: z.string().optional(),
+  KNOWLEDGE_SOURCE_DIR: z.string().optional(),
   BINANCE_BASE_URL: z.string().url().default('https://api.binance.com'),
+  YAHOO_FINANCE_BASE_URL: z.string().url().default('https://query1.finance.yahoo.com'),
   MARKET_SYMBOL: z.string().min(3).default('BTCUSDT'),
   MARKET_INTERVAL: z.string().min(1).default('1h'),
   MARKET_LIMIT: z.coerce.number().int().min(30).max(1000).default(120),
   CACHE_TTL_SECONDS: z.coerce.number().int().min(0).default(60),
+  OGID_BASE_URL: z.string().url().default('http://localhost:8080/api'),
+  OGID_ENABLED: z
+    .enum(['true', 'false', '1', '0'])
+    .default('false')
+    .transform((value) => value === 'true' || value === '1'),
+  OGID_TIMEOUT_MS: z.coerce.number().int().positive().default(8000),
+  OPENAI_API_KEY: z.string().optional(),
+  OPENAI_MODEL: z.string().min(1).default('gpt-4.1-mini'),
+  OPENAI_BASE_URL: optionalUrl,
+  OPENAI_TIMEOUT_MS: z.coerce.number().int().positive().default(8000),
+  MACRO_REGIME: z.enum(['risk_on', 'risk_off', 'mixed']).default('mixed'),
+  MACRO_INFLATION_TREND: z.enum(['up', 'down', 'stable']).default('stable'),
+  MACRO_RATES_TREND: z.enum(['rising', 'falling', 'stable']).default('stable'),
+  MACRO_VOLATILITY_REGIME: z.enum(['calm', 'stressed', 'panic']).default('calm'),
+  MACRO_EVENT_RISK: z.enum(['low', 'medium', 'high']).default('low'),
+  MACRO_LIQUIDITY: z.enum(['expanding', 'tightening', 'neutral']).default('neutral'),
+  MACRO_CACHE_TTL_SECONDS: z.coerce.number().int().min(0).default(900),
 });
 
 const parsed = envSchema.safeParse(process.env);
@@ -29,6 +53,10 @@ const env = {
   ROOT_DIR: process.cwd(),
   RAW_DATA_DIR: path.resolve(process.cwd(), 'data/raw'),
   PROCESSED_DATA_DIR: path.resolve(process.cwd(), 'data/processed'),
+  KNOWLEDGE_DATA_DIR: path.resolve(process.cwd(), 'data/knowledge'),
+  KNOWLEDGE_SOURCE_DIR: parsed.data.KNOWLEDGE_SOURCE_DIR
+    ? path.resolve(parsed.data.KNOWLEDGE_SOURCE_DIR)
+    : null,
   PROCESSED_TRADES_PATH: path.resolve(process.cwd(), 'data/processed/trades.json'),
   HISTORICAL_FEATURES_PATH: path.resolve(process.cwd(), 'data/processed/historical-features.json'),
 };

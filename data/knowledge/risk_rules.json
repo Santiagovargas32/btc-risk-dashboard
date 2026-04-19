@@ -1,0 +1,30 @@
+{
+  "rules": [
+    {
+      "id": "high_vol_reduce_size",
+      "condition": {
+        "dangerLevel": "high"
+      },
+      "positionSizingAdjustment": -0.5,
+      "note": "Reduce risk in unstable high-volatility conditions.",
+      "source": {
+        "fileName": "seed",
+        "section": "default",
+        "extractedAt": "2026-04-19T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "event_risk_reduce_size",
+      "condition": {
+        "eventRisk": "high"
+      },
+      "positionSizingAdjustment": -0.35,
+      "note": "Reduce risk into major scheduled or geopolitical events.",
+      "source": {
+        "fileName": "seed",
+        "section": "default",
+        "extractedAt": "2026-04-19T00:00:00.000Z"
+      }
+    }
+  ]
+}

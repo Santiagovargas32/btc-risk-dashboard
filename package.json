@@ -1,12 +1,16 @@
 {
   "name": "btc-risk-dashboard",
   "version": "1.0.0",
-  "description": "BTC trading decision dashboard based on historical behavior and current market conditions.",
+  "description": "Deterministic-first multi-asset market intelligence and risk-aware trade suggestion dashboard.",
   "main": "src/server/app.js",
   "scripts": {
     "start": "node src/server/app.js",
     "dev": "nodemon src/server/app.js",
     "import:dataset": "node scripts/import-dataset.js",
+    "import:knowledge": "node scripts/import-pdf-knowledge.js",
+    "import:knowledge-dir": "node scripts/import-knowledge-directory.js",
+    "knowledge:summary": "node scripts/build-knowledge-json.js",
+    "macro:backfill": "node scripts/backfill-macro-history.js",
     "build:snapshots": "node scripts/build-snapshots.js",
     "test": "node tests/run-tests.js"
   },
@@ -20,6 +24,8 @@
     "csv-parse": "6.2.1",
     "dotenv": "17.4.2",
     "express": "5.2.1",
+    "openai": "^6.34.0",
+    "pdf-parse": "^2.4.5",
     "zod": "4.3.6"
   },
   "devDependencies": {

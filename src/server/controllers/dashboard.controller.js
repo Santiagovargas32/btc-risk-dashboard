@@ -15,6 +15,7 @@ async function loadHistoricalTrades() {
 function getDashboardOptions(req) {
   return {
     interval: req?.query?.interval,
+    symbol: req?.query?.symbol,
   };
 }
 
@@ -23,6 +24,7 @@ async function buildDashboardPayload(options = {}) {
   const historical = computeHistoricalFeatures(trades);
   const market = await marketDataService.getMarketFeatures({
     interval: options.interval,
+    symbol: options.symbol,
   });
   const fusion = computeFusion(historical, market);
   const scoring = scoreTrade(historical, market, fusion);
@@ -36,6 +38,7 @@ async function buildDashboardPayload(options = {}) {
     market,
     fusion,
     supportedIntervals: marketDataService.SUPPORTED_INTERVALS,
+    disclaimer: 'Deterministic risk support only. This system does not predict price or guarantee accuracy.',
     generatedAt: new Date().toISOString(),
   };
 }

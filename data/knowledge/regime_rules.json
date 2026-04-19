@@ -1,0 +1,18 @@
+{
+  "rules": [
+    {
+      "id": "trend_plus_calm_macro_supports_direction",
+      "condition": {
+        "technicalRegime": "trend",
+        "macroRegime": "risk_on"
+      },
+      "interpretation": "Directional setups have better follow-through when technical trend and macro risk appetite align.",
+      "confidenceWeight": 0.65,
+      "source": {
+        "fileName": "seed",
+        "section": "default",
+        "extractedAt": "2026-04-19T00:00:00.000Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,5064 @@
+{
+  "rules": [
+    {
+      "id": "rates_down_equities_up",
+      "condition": {
+        "ratesTrend": "falling",
+        "volatilityRegime": "calm"
+      },
+      "impact": {
+        "stocks": "bullish",
+        "growth": "more_bullish",
+        "usd": "weaker_bias"
+      },
+      "confidenceWeight": 0.7,
+      "source": {
+        "fileName": "seed",
+        "section": "default",
+        "extractedAt": "2026-04-19T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "risk_off_crypto_equities_pressure",
+      "condition": {
+        "regime": "risk_off",
+        "volatilityRegime": "stressed"
+      },
+      "impact": {
+        "crypto": "bearish",
+        "stocks": "bearish",
+        "safe_haven": "bullish"
+      },
+      "confidenceWeight": 0.65,
+      "source": {
+        "fileName": "seed",
+        "section": "default",
+        "extractedAt": "2026-04-19T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_01_31_time_period_2000jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-1",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.004Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_02_29_time_period_2000feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-2",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_03_31_time_period_2000mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-3",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_04_30_time_period_2000apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-4",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_05_31_time_period_2000may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-5",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_06_30_time_period_2000jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-6",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_07_31_time_period_2000jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-7",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_08_31_time_period_2000aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-8",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_09_30_time_period_2000sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-9",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_10_31_time_period_2000oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-10",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_11_30_time_period_2000nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-11",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2000_12_31_time_period_2000dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-12",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_01_31_time_period_2001jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-13",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.005Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_02_28_time_period_2001feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-14",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_03_31_time_period_2001mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-15",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_04_30_time_period_2001apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-16",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_05_31_time_period_2001may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-17",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_06_30_time_period_2001jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-18",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_07_31_time_period_2001jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-19",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_08_31_time_period_2001aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-20",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_09_30_time_period_2001sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-21",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_10_31_time_period_2001oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-22",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_11_30_time_period_2001nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-23",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2001_12_31_time_period_2001dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-24",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_01_31_time_period_2002jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-25",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_02_28_time_period_2002feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-26",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_03_31_time_period_2002mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-27",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_04_30_time_period_2002apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-28",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_05_31_time_period_2002may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-29",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_06_30_time_period_2002jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-30",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_07_31_time_period_2002jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-31",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_08_31_time_period_2002aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-32",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_09_30_time_period_2002sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-33",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_10_31_time_period_2002oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-34",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_11_30_time_period_2002nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-35",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2002_12_31_time_period_2002dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-36",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_01_31_time_period_2003jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-37",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_02_28_time_period_2003feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-38",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_03_31_time_period_2003mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-39",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_04_30_time_period_2003apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-40",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_05_31_time_period_2003may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-41",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.006Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_06_30_time_period_2003jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-42",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_07_31_time_period_2003jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-43",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_08_31_time_period_2003aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-44",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_09_30_time_period_2003sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-45",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_10_31_time_period_2003oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-46",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_11_30_time_period_2003nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-47",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2003_12_31_time_period_2003dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-48",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_01_31_time_period_2004jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-49",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_02_29_time_period_2004feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-50",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_03_31_time_period_2004mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-51",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_04_30_time_period_2004apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-52",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_05_31_time_period_2004may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-53",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_06_30_time_period_2004jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-54",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_07_31_time_period_2004jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-55",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_08_31_time_period_2004aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-56",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_09_30_time_period_2004sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-57",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_10_31_time_period_2004oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-58",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_11_30_time_period_2004nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-59",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2004_12_31_time_period_2004dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-60",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_01_31_time_period_2005jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-61",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_02_28_time_period_2005feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-62",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_03_31_time_period_2005mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-63",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_04_30_time_period_2005apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-64",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_05_31_time_period_2005may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-65",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_06_30_time_period_2005jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-66",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_07_31_time_period_2005jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-67",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_08_31_time_period_2005aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-68",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_09_30_time_period_2005sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-69",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_10_31_time_period_2005oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-70",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_11_30_time_period_2005nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-71",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2005_12_31_time_period_2005dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-72",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_01_31_time_period_2006jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-73",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_02_28_time_period_2006feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-74",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_03_31_time_period_2006mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-75",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_04_30_time_period_2006apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-76",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_05_31_time_period_2006may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-77",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_06_30_time_period_2006jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-78",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_07_31_time_period_2006jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-79",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_08_31_time_period_2006aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-80",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_09_30_time_period_2006sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-81",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_10_31_time_period_2006oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-82",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_11_30_time_period_2006nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-83",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.007Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2006_12_31_time_period_2006dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-84",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_01_31_time_period_2007jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-85",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_02_28_time_period_2007feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-86",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_03_31_time_period_2007mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-87",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_04_30_time_period_2007apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-88",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_05_31_time_period_2007may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-89",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_06_30_time_period_2007jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-90",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_07_31_time_period_2007jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-91",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_08_31_time_period_2007aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-92",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_09_30_time_period_2007sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-93",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_10_31_time_period_2007oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-94",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_11_30_time_period_2007nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-95",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2007_12_31_time_period_2007dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-96",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_01_31_time_period_2008jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-97",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_02_29_time_period_2008feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-98",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_03_31_time_period_2008mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-99",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_04_30_time_period_2008apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-100",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_05_31_time_period_2008may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-101",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_06_30_time_period_2008jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-102",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_07_31_time_period_2008jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-103",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_08_31_time_period_2008aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-104",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_09_30_time_period_2008sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-105",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_10_31_time_period_2008oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-106",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_11_30_time_period_2008nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-107",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2008_12_31_time_period_2008dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-108",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_01_31_time_period_2009jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-109",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_02_28_time_period_2009feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-110",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_03_31_time_period_2009mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-111",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_04_30_time_period_2009apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-112",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_05_31_time_period_2009may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-113",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_06_30_time_period_2009jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-114",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_07_31_time_period_2009jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-115",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_08_31_time_period_2009aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-116",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_09_30_time_period_2009sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-117",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_10_31_time_period_2009oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-118",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_11_30_time_period_2009nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-119",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2009_12_31_time_period_2009dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-120",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_01_31_time_period_2010jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-121",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.008Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_02_28_time_period_2010feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-122",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_03_31_time_period_2010mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-123",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_04_30_time_period_2010apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-124",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_05_31_time_period_2010may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-125",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_06_30_time_period_2010jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-126",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_07_31_time_period_2010jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-127",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_08_31_time_period_2010aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-128",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_09_30_time_period_2010sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-129",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_10_31_time_period_2010oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-130",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_11_30_time_period_2010nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-131",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2010_12_31_time_period_2010dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-132",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_01_31_time_period_2011jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-133",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_02_28_time_period_2011feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-134",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_03_31_time_period_2011mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-135",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_04_30_time_period_2011apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-136",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_05_31_time_period_2011may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-137",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_06_30_time_period_2011jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-138",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_07_31_time_period_2011jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-139",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_08_31_time_period_2011aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-140",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_09_30_time_period_2011sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-141",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_10_31_time_period_2011oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-142",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_11_30_time_period_2011nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-143",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2011_12_31_time_period_2011dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-144",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_01_31_time_period_2012jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-145",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_02_29_time_period_2012feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-146",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_03_31_time_period_2012mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-147",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_04_30_time_period_2012apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-148",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_05_31_time_period_2012may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-149",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_06_30_time_period_2012jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-150",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_07_31_time_period_2012jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-151",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_08_31_time_period_2012aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-152",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.009Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_09_30_time_period_2012sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-153",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_10_31_time_period_2012oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-154",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_11_30_time_period_2012nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-155",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2012_12_31_time_period_2012dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-156",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_01_31_time_period_2013jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-157",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_02_28_time_period_2013feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-158",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_03_31_time_period_2013mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-159",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_04_30_time_period_2013apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-160",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_05_31_time_period_2013may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-161",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_06_30_time_period_2013jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-162",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_07_31_time_period_2013jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-163",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_08_31_time_period_2013aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-164",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_09_30_time_period_2013sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-165",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_10_31_time_period_2013oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-166",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_11_30_time_period_2013nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-167",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2013_12_31_time_period_2013dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-168",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_01_31_time_period_2014jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-169",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_02_28_time_period_2014feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-170",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_03_31_time_period_2014mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-171",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_04_30_time_period_2014apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-172",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_05_31_time_period_2014may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-173",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_06_30_time_period_2014jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-174",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_07_31_time_period_2014jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-175",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_08_31_time_period_2014aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-176",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_09_30_time_period_2014sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-177",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_10_31_time_period_2014oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-178",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_11_30_time_period_2014nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-179",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2014_12_31_time_period_2014dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-180",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_01_31_time_period_2015jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-181",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_02_28_time_period_2015feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-182",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_03_31_time_period_2015mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-183",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_04_30_time_period_2015apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-184",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_05_31_time_period_2015may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-185",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_06_30_time_period_2015jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-186",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_07_31_time_period_2015jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-187",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_08_31_time_period_2015aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-188",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_09_30_time_period_2015sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-189",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.010Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_10_31_time_period_2015oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-190",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_11_30_time_period_2015nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-191",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2015_12_31_time_period_2015dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-192",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_01_31_time_period_2016jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-193",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_02_29_time_period_2016feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-194",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_03_31_time_period_2016mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-195",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_04_30_time_period_2016apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-196",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_05_31_time_period_2016may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-197",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_06_30_time_period_2016jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-198",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_07_31_time_period_2016jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-199",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_08_31_time_period_2016aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-200",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_09_30_time_period_2016sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-201",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_10_31_time_period_2016oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-202",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_11_30_time_period_2016nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-203",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2016_12_31_time_period_2016dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-204",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_01_31_time_period_2017jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-205",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_02_28_time_period_2017feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-206",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_03_31_time_period_2017mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-207",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_04_30_time_period_2017apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-208",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_05_31_time_period_2017may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-209",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_06_30_time_period_2017jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-210",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_07_31_time_period_2017jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-211",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_08_31_time_period_2017aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-212",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_09_30_time_period_2017sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-213",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_10_31_time_period_2017oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-214",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_11_30_time_period_2017nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-215",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2017_12_31_time_period_2017dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-216",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_01_31_time_period_2018jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-217",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_02_28_time_period_2018feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-218",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_03_31_time_period_2018mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-219",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_04_30_time_period_2018apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-220",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_05_31_time_period_2018may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-221",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_06_30_time_period_2018jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-222",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_07_31_time_period_2018jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-223",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_08_31_time_period_2018aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-224",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_09_30_time_period_2018sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-225",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_10_31_time_period_2018oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-226",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.011Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_11_30_time_period_2018nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-227",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2018_12_31_time_period_2018dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-228",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_01_31_time_period_2019jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-229",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_02_28_time_period_2019feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-230",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_03_31_time_period_2019mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-231",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_04_30_time_period_2019apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-232",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_05_31_time_period_2019may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-233",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_06_30_time_period_2019jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-234",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_07_31_time_period_2019jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-235",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_08_31_time_period_2019aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-236",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_09_30_time_period_2019sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-237",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_10_31_time_period_2019oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-238",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_11_30_time_period_2019nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-239",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2019_12_31_time_period_2019dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-240",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_01_31_time_period_2020jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-241",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_02_29_time_period_2020feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-242",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_03_31_time_period_2020mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-243",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_04_30_time_period_2020apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-244",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_05_31_time_period_2020may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-245",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_06_30_time_period_2020jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-246",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_07_31_time_period_2020jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-247",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_08_31_time_period_2020aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-248",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_09_30_time_period_2020sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-249",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_10_31_time_period_2020oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-250",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_11_30_time_period_2020nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-251",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2020_12_31_time_period_2020dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-252",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_01_31_time_period_2021jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-253",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_02_28_time_period_2021feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-254",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_03_31_time_period_2021mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-255",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_04_30_time_period_2021apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-256",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_05_31_time_period_2021may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-257",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_06_30_time_period_2021jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-258",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_07_31_time_period_2021jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-259",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_08_31_time_period_2021aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-260",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.012Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_09_30_time_period_2021sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-261",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_10_31_time_period_2021oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-262",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_11_30_time_period_2021nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-263",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2021_12_31_time_period_2021dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-264",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_01_31_time_period_2022jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-265",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_02_28_time_period_2022feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-266",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_03_31_time_period_2022mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-267",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_04_30_time_period_2022apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-268",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_05_31_time_period_2022may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-269",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_06_30_time_period_2022jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-270",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_07_31_time_period_2022jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-271",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_08_31_time_period_2022aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-272",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_09_30_time_period_2022sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-273",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_10_31_time_period_2022oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-274",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_11_30_time_period_2022nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-275",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2022_12_31_time_period_2022dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-276",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_01_31_time_period_2023jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-277",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_02_28_time_period_2023feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-278",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_03_31_time_period_2023mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-279",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_04_30_time_period_2023apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-280",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_05_31_time_period_2023may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-281",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.013Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_06_30_time_period_2023jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-282",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_07_31_time_period_2023jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-283",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_08_31_time_period_2023aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-284",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_09_30_time_period_2023sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-285",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_10_31_time_period_2023oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-286",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_11_30_time_period_2023nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-287",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2023_12_31_time_period_2023dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-288",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_01_31_time_period_2024jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-289",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_02_29_time_period_2024feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-290",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_03_31_time_period_2024mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-291",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_04_30_time_period_2024apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-292",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_05_31_time_period_2024may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-293",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_06_30_time_period_2024jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-294",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_07_31_time_period_2024jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-295",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_08_31_time_period_2024aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-296",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_09_30_time_period_2024sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-297",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_10_31_time_period_2024oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-298",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_11_30_time_period_2024nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-299",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2024_12_31_time_period_2024dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-300",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_01_31_time_period_2025jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-301",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_02_28_time_period_2025feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-302",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_03_31_time_period_2025mar_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-303",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_04_30_time_period_2025apr_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-304",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_05_31_time_period_2025may_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-305",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_06_30_time_period_2025jun_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-306",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_07_31_time_period_2025jul_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-307",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_08_31_time_period_2025aug_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-308",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_09_30_time_period_2025sep_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-309",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_10_31_time_period_2025oct_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-310",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_11_30_time_period_2025nov_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-311",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2025_12_31_time_period_2025dec_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-312",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2026_01_31_time_period_2026jan_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-313",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    },
+    {
+      "id": "pdf_macro_date_2026_02_28_time_period_2026feb_bank_interest_rates",
+      "condition": {
+        "ratesTrend": "stable"
+      },
+      "impact": {
+        "stocks": "mixed",
+        "crypto": "mixed"
+      },
+      "confidenceWeight": 0.45,
+      "source": {
+        "fileName": "ECB Data Portal_20260419181527.csv#row-314",
+        "section": "deterministic_chunk",
+        "extractedAt": "2026-04-19T17:43:41.014Z"
+      }
+    }
+  ]
+}

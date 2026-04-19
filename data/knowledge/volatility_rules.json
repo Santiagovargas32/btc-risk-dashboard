@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+      "id": "compressed_range_breakout_watch",
+      "condition": {
+        "regime": "compressed_range"
+      },
+      "impact": {
+        "strategy": "wait_for_breakout_confirmation",
+        "risk": "avoid_large_size_before_expansion"
+      },
+      "confidenceWeight": 0.6,
+      "source": {
+        "fileName": "seed",
+        "section": "default",
+        "extractedAt": "2026-04-19T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "high_vol_noise_reduce_directional_trades",
+      "condition": {
+        "regime": "high_vol_noise"
+      },
+      "impact": {
+        "strategy": "reduce_directional_exposure",
+        "risk": "whipsaw"
+      },
+      "confidenceWeight": 0.8,
+      "source": {
+        "fileName": "seed",
+        "section": "default",
+        "extractedAt": "2026-04-19T00:00:00.000Z"
+      }
+    }
+  ]
+}
