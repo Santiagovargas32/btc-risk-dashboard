@@ -1,19 +1,17 @@
 const { SUPPORTED_INTERVALS } = require('../../config/weights');
 const { getAsset } = require('../assets/asset-registry.service');
-const cryptoMarketData = require('../market-data/crypto-market-data.service');
-const equityMarketData = require('../market-data/equity-market-data.service');
+const marketDataProvider = require('../market-data/market-data-provider.service');
 const { analyzeTechnical } = require('./technical-engine.service');
 
 function marketDataForAsset(asset) {
-  return asset.market === 'binance' ? cryptoMarketData : equityMarketData;
+  return marketDataProvider.getProviderForAsset(asset);
 }
 
 async function analyzeTimeframe(options = {}) {
-  const asset = getAsset(options.symbol);
+  const asset = options.asset || getAsset(options.symbol);
   const interval = options.interval || '1h';
-  const service = marketDataForAsset(asset);
-  const candles = await service.fetchCandles({
-    symbol: asset.symbol,
+  const candles = await marketDataProvider.fetchCandles({
+    asset,
     interval,
     limit: options.limit,
   });

@@ -31,7 +31,7 @@ body {
 
 .header-actions {
   display: grid;
-  grid-template-columns: minmax(120px, 160px) minmax(92px, 120px) auto;
+  grid-template-columns: minmax(132px, 170px) minmax(120px, 170px) minmax(92px, 120px) auto auto auto;
   align-items: end;
   gap: 0.75rem;
 }
@@ -54,18 +54,38 @@ label[for='assetSelect'] {
   grid-row: 1;
 }
 
-#intervalSelect {
+#assetSearchInput {
   grid-column: 2;
   grid-row: 2;
 }
 
-label[for='intervalSelect'] {
+label[for='assetSearchInput'] {
   grid-column: 2;
   grid-row: 1;
 }
 
-.header-actions .btn {
+#intervalSelect {
   grid-column: 3;
+  grid-row: 2;
+}
+
+label[for='intervalSelect'] {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#addAssetButton {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+#removeAssetButton {
+  grid-column: 5;
+  grid-row: 2;
+}
+
+#refreshButton {
+  grid-column: 6;
   grid-row: 2;
 }
 
@@ -189,6 +209,75 @@ label[for='intervalSelect'] {
   font-weight: 700;
 }
 
+.panel-subsection {
+  border-top: 1px solid var(--line);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.subsection-label {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.event-list,
+.driver-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.event-item,
+.driver-item {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.event-item-header,
+.driver-item-header {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.event-title,
+.driver-title {
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.event-meta,
+.driver-meta {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.event-badge {
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  flex: 0 0 auto;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.4rem;
+  text-transform: uppercase;
+}
+
+.event-badge.high {
+  border-color: rgba(249, 112, 102, 0.62);
+  color: #ffaca5;
+}
+
+.event-badge.medium {
+  border-color: rgba(228, 170, 58, 0.62);
+  color: #f3c46b;
+}
+
 .match-list {
   display: grid;
   gap: 0.65rem;
@@ -228,16 +317,48 @@ label[for='intervalSelect'] {
   color: #07100b;
 }
 
-.form-select {
+.form-select,
+.form-control {
   background-color: var(--panel-strong);
   border-color: var(--line);
   border-radius: 8px;
   color: var(--ink);
 }
 
-.form-select:focus {
+.form-select:focus,
+.form-control:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 0.2rem rgba(47, 209, 139, 0.2);
+}
+
+.form-control::placeholder {
+  color: #6f7974;
+}
+
+.btn-outline-accent {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.btn-outline-accent:hover,
+.btn-outline-accent:focus {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #07100b;
+}
+
+.btn-outline-danger {
+  border-color: rgba(249, 112, 102, 0.72);
+  color: #ffaca5;
+  font-weight: 700;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #160403;
 }
 
 .alert-danger {
@@ -276,9 +397,12 @@ label[for='intervalSelect'] {
   }
 
   label[for='assetSelect'],
+  label[for='assetSearchInput'],
   label[for='intervalSelect'],
   #assetSelect,
+  #assetSearchInput,
   .header-actions .form-select,
+  .header-actions .form-control,
   .header-actions .btn {
     grid-column: 1;
     grid-row: auto;

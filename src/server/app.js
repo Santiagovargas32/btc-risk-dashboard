@@ -5,6 +5,7 @@ const logger = require('./utils/logger');
 const dashboardRoutes = require('./routes/dashboard.routes');
 const scoringRoutes = require('./routes/scoring.routes');
 const healthRoutes = require('./routes/health.routes');
+const assetsRoutes = require('./routes/assets.routes');
 const analysisRoutes = require('./routes/analysis.routes');
 const macroRoutes = require('./routes/macro.routes');
 const geopoliticsRoutes = require('./routes/geopolitics.routes');
@@ -47,6 +48,7 @@ app.use('/vendor/chart.js', express.static(path.join(env.ROOT_DIR, 'node_modules
 app.use(express.static(path.join(env.ROOT_DIR, 'client')));
 
 app.use('/api/health', healthRoutes);
+app.use('/api/assets', assetsRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/scoring', scoringRoutes);
 app.use('/api/analysis', analysisRoutes);

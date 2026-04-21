@@ -1,8 +1,9 @@
 const env = require('../config/env');
 const fileRepository = require('../repositories/file.repository');
+const assetCatalog = require('../services/assets/asset-catalog.service');
 const { deserializeTrade } = require('../services/normalizer.service');
 const { computeHistoricalFeatures } = require('../services/feature-engine.service');
-const marketDataService = require('../services/market-data.service');
+const marketDataProvider = require('../services/market-data/market-data-provider.service');
 const { computeFusion } = require('../services/fusion-engine.service');
 const { scoreTrade } = require('../services/scoring/rule-based-score.service');
 
@@ -22,9 +23,10 @@ function getDashboardOptions(req) {
 async function buildDashboardPayload(options = {}) {
   const trades = await loadHistoricalTrades();
   const historical = computeHistoricalFeatures(trades);
-  const market = await marketDataService.getMarketFeatures({
+  const asset = await assetCatalog.resolveAsset(options.symbol);
+  const market = await marketDataProvider.getMarketFeatures({
+    asset,
     interval: options.interval,
-    symbol: options.symbol,
   });
   const fusion = computeFusion(historical, market);
   const scoring = scoreTrade(historical, market, fusion);
@@ -34,10 +36,11 @@ async function buildDashboardPayload(options = {}) {
     decision: scoring.decision,
     components: scoring.components,
     summary: scoring.summary,
+    asset,
     historical,
     market,
     fusion,
-    supportedIntervals: marketDataService.SUPPORTED_INTERVALS,
+    supportedIntervals: marketDataProvider.SUPPORTED_INTERVALS,
     disclaimer: 'Deterministic risk support only. This system does not predict price or guarantee accuracy.',
     generatedAt: new Date().toISOString(),
   };

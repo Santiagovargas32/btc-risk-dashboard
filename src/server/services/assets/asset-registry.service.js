@@ -1,4 +1,4 @@
-const ASSETS = [
+const SEED_ASSETS = [
   {
     symbol: 'BTCUSDT',
     type: 'crypto',
@@ -43,8 +43,41 @@ const ASSETS = [
   },
 ];
 
+const KNOWN_ETF_SYMBOLS = new Set([
+  'DIA',
+  'EEM',
+  'EFA',
+  'GLD',
+  'HYG',
+  'IWM',
+  'LQD',
+  'QQQ',
+  'SLV',
+  'SPY',
+  'TLT',
+  'USO',
+  'VOO',
+  'VTI',
+  'XLE',
+  'XLF',
+  'XLK',
+]);
+
 function normalizeSymbol(symbol) {
   return String(symbol || 'BTCUSDT').trim().toUpperCase();
+}
+
+function cloneAsset(asset, source) {
+  const cloned = {
+    ...asset,
+    tags: Array.isArray(asset.tags) ? [...asset.tags] : [],
+  };
+
+  if (source) {
+    cloned.source = source;
+  }
+
+  return cloned;
 }
 
 function inferAsset(symbol) {
@@ -60,6 +93,16 @@ function inferAsset(symbol) {
     };
   }
 
+  if (KNOWN_ETF_SYMBOLS.has(normalized)) {
+    return {
+      symbol: normalized,
+      type: 'etf',
+      market: 'yahoo',
+      quoteCurrency: 'USD',
+      tags: ['risk_on', 'broad_market'],
+    };
+  }
+
   return {
     symbol: normalized,
     type: 'stock',
@@ -69,13 +112,38 @@ function inferAsset(symbol) {
   };
 }
 
+function getSeedAsset(symbol) {
+  const normalized = normalizeSymbol(symbol);
+  const asset = SEED_ASSETS.find((candidate) => candidate.symbol === normalized);
+  return asset ? cloneAsset(asset) : null;
+}
+
 function getAsset(symbol) {
   const normalized = normalizeSymbol(symbol);
-  return ASSETS.find((asset) => asset.symbol === normalized) || inferAsset(normalized);
+  return getSeedAsset(normalized) || inferAsset(normalized);
 }
 
 function listAssets() {
-  return ASSETS.map((asset) => ({ ...asset, tags: [...asset.tags] }));
+  return SEED_ASSETS.map((asset) => cloneAsset(asset));
+}
+
+function listSeedAssets() {
+  return listAssets();
+}
+
+function mergeAssets(assetGroups = []) {
+  const bySymbol = new Map();
+
+  for (const group of assetGroups) {
+    for (const asset of group || []) {
+      const normalized = normalizeSymbol(asset.symbol);
+      if (!bySymbol.has(normalized)) {
+        bySymbol.set(normalized, cloneAsset({ ...asset, symbol: normalized }, asset.source));
+      }
+    }
+  }
+
+  return Array.from(bySymbol.values());
 }
 
 function isSafeHaven(asset) {
@@ -89,10 +157,14 @@ function isGrowthRiskAsset(asset) {
 }
 
 module.exports = {
+  cloneAsset,
   getAsset,
+  getSeedAsset,
   inferAsset,
   isGrowthRiskAsset,
   isSafeHaven,
   listAssets,
+  listSeedAssets,
+  mergeAssets,
   normalizeSymbol,
 };

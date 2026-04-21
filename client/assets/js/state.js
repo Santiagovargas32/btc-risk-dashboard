@@ -4,6 +4,7 @@ let state = {
   loading: false,
   error: null,
   data: null,
+  assets: [],
   symbol: 'BTCUSDT',
   interval: '1h',
 };

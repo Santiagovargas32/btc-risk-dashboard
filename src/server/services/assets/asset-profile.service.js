@@ -8,6 +8,7 @@ function buildAssetProfile(asset) {
     type: asset.type,
     market: asset.market,
     quoteCurrency: asset.quoteCurrency,
+    source: asset.source,
     tags,
     behavior: {
       riskOnSensitive: isGrowthRiskAsset(asset),

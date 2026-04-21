@@ -6,6 +6,20 @@ function isEnabled(options = {}) {
   return options.enabled ?? env.OGID_ENABLED;
 }
 
+function unwrapEnvelope(payload) {
+  const isEnvelope = payload && typeof payload === 'object' && !Array.isArray(payload) && Object.hasOwn(payload, 'data');
+  const data = isEnvelope ? payload.data : payload;
+  const meta = data?.meta || payload?.meta || null;
+
+  return {
+    ok: isEnvelope && Object.hasOwn(payload, 'ok') ? Boolean(payload.ok) : true,
+    data,
+    meta,
+    dataQuality: meta?.dataQuality || data?.dataQuality || payload?.dataQuality || null,
+    raw: payload,
+  };
+}
+
 async function request(path, params = {}, options = {}) {
   if (!isEnabled(options)) {
     return {
@@ -22,11 +36,16 @@ async function request(path, params = {}, options = {}) {
       timeout: options.timeoutMs || env.OGID_TIMEOUT_MS,
       params,
     });
+    const normalized = unwrapEnvelope(response.data);
 
     return {
-      ok: true,
-      unavailable: false,
-      data: response.data,
+      ok: normalized.ok,
+      unavailable: !normalized.ok,
+      data: normalized.data,
+      dataQuality: normalized.dataQuality,
+      meta: normalized.meta,
+      reason: normalized.ok ? undefined : 'OGID response returned ok=false',
+      raw: normalized.raw,
     };
   } catch (error) {
     logger.warn('ogid.request.failed', {
@@ -45,6 +64,10 @@ async function request(path, params = {}, options = {}) {
 
 function getNews(params = {}, options = {}) {
   return request('/intel/news', params, options);
+}
+
+function getSnapshot(params = {}, options = {}) {
+  return request('/intel/snapshot', params, options);
 }
 
 function getInsights(params = {}, options = {}) {
@@ -69,6 +92,8 @@ module.exports = {
   getMarketImpact,
   getNews,
   getRisks,
+  getSnapshot,
   isEnabled,
   request,
+  unwrapEnvelope,
 };

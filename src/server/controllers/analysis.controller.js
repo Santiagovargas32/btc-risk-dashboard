@@ -1,4 +1,4 @@
-const { getAsset } = require('../services/assets/asset-registry.service');
+const assetCatalog = require('../services/assets/asset-catalog.service');
 const { buildAssetProfile } = require('../services/assets/asset-profile.service');
 const { analyzeTimeframe, analyzeMultiTimeframe } = require('../services/technical/timeframe-technical.service');
 const { getMacroSnapshot } = require('../services/macro/macro-engine.service');
@@ -13,10 +13,10 @@ function shouldIncludeLlm(query = {}) {
 }
 
 async function buildAnalysisPayload(options = {}) {
-  const asset = getAsset(options.symbol);
+  const asset = await assetCatalog.resolveAsset(options.symbol);
   const interval = options.interval || '1h';
   const timeframe = await analyzeTimeframe({
-    symbol: asset.symbol,
+    asset,
     interval,
     limit: options.limit,
   });
@@ -83,9 +83,9 @@ async function buildAnalysisPayload(options = {}) {
 }
 
 async function buildMultiTimeframePayload(options = {}) {
-  const asset = getAsset(options.symbol);
+  const asset = await assetCatalog.resolveAsset(options.symbol);
   const timeframes = await analyzeMultiTimeframe({
-    symbol: asset.symbol,
+    asset,
     limit: options.limit,
   });
   const primary = timeframes.find((analysis) => analysis.interval === '1h') || timeframes[0];

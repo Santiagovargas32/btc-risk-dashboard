@@ -9,7 +9,10 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+data/config/*
+!data/config/.gitkeep
 data/knowledge/sources.json
+tests/.tmp/
 
 coverage/
 .DS_Store

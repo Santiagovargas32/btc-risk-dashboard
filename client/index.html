@@ -18,13 +18,9 @@
         <div class="header-actions">
           <label class="form-label mb-1" for="assetSelect">Asset</label>
           <select id="assetSelect" class="form-select" aria-label="Asset">
-            <option value="BTCUSDT" selected>BTCUSDT</option>
-            <option value="ETHUSDT">ETHUSDT</option>
-            <option value="AAPL">AAPL</option>
-            <option value="SPY">SPY</option>
-            <option value="GLD">GLD</option>
-            <option value="TLT">TLT</option>
           </select>
+          <label class="form-label mb-1" for="assetSearchInput">Search</label>
+          <input id="assetSearchInput" class="form-control" type="text" placeholder="NVDA" autocomplete="off" aria-label="Search asset symbol">
           <label class="form-label mb-1" for="intervalSelect">Interval</label>
           <select id="intervalSelect" class="form-select" aria-label="Market interval">
             <option value="1m">1m</option>
@@ -35,6 +31,8 @@
             <option value="4h">4h</option>
             <option value="1d">1d</option>
           </select>
+          <button id="addAssetButton" class="btn btn-outline-accent" type="button">Add</button>
+          <button id="removeAssetButton" class="btn btn-outline-danger" type="button">Remove</button>
           <button id="refreshButton" class="btn btn-accent" type="button">Refresh</button>
         </div>
       </header>
@@ -75,6 +73,14 @@
             <p class="panel-label mb-1">Macro</p>
             <h2 class="h5 mb-3">Regime Snapshot</h2>
             <dl id="macroStats" class="stats-list mb-0"></dl>
+            <div class="panel-subsection">
+              <p class="subsection-label mb-2">Upcoming Macro Events</p>
+              <div id="macroEvents" class="event-list"></div>
+            </div>
+            <div class="panel-subsection">
+              <p class="subsection-label mb-2">Macro Drivers</p>
+              <div id="macroDrivers" class="driver-list"></div>
+            </div>
           </article>
         </div>
         <div class="col-lg-4">
@@ -82,6 +88,10 @@
             <p class="panel-label mb-1">Geopolitics</p>
             <h2 class="h5 mb-3">OGID Context</h2>
             <dl id="geopoliticsStats" class="stats-list mb-0"></dl>
+            <div class="panel-subsection">
+              <p class="subsection-label mb-2">Top Drivers</p>
+              <div id="geopoliticsDrivers" class="driver-list"></div>
+            </div>
           </article>
         </div>
         <div class="col-lg-4">
@@ -109,39 +119,8 @@
           </article>
         </div>
       </section>
-
-      <section class="row g-3">
-        <div class="col-xl-8">
-          <article class="panel h-100">
-            <div class="d-flex align-items-center justify-content-between gap-3 mb-3">
-              <div>
-                <p class="panel-label mb-1">Historical Equity</p>
-                <h2 class="h5 mb-0">Equity Curve</h2>
-              </div>
-              <span id="tradeCount" class="text-secondary small">0 trades</span>
-            </div>
-            <div class="chart-frame">
-              <canvas id="equityChart" aria-label="Historical equity curve"></canvas>
-              <p id="chartEmptyState" class="chart-empty mb-0">Import a dataset to display historical equity.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-xl-4">
-          <article class="panel h-100">
-            <p class="panel-label mb-1">Technical Conditions</p>
-            <h2 class="h5 mb-3">Selected Asset Snapshot</h2>
-            <p id="marketCacheInfo" class="cache-note mb-3">Binance cache: --</p>
-            <dl id="marketStats" class="stats-list mb-4"></dl>
-
-            <p class="panel-label mb-1">Historical Profile</p>
-            <dl id="historicalStats" class="stats-list mb-0"></dl>
-          </article>
-        </div>
-      </section>
     </main>
 
-    <script src="/vendor/chart.js/chart.umd.js"></script>
     <script type="module" src="/assets/js/dashboard.js"></script>
   </body>
 </html>
