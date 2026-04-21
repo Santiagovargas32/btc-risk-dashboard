@@ -4,7 +4,7 @@
 
 It is not an oracle. It does not predict price, guarantee accuracy, or promise profitable trades. The goal is to improve risk-adjusted decision quality versus an ad hoc retail workflow by making the assumptions, scores, conflicts, data sources, and risk controls explicit.
 
-![Market Intelligence dashboard](docs/dashboard-main.png)
+![Market Intelligence dashboard](docs/image.png)
 
 ## Architecture
 
